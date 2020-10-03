@@ -1,0 +1,233 @@
+<meta charset="UTF-8">
+<title>Exercicio JS 02-10</title>
+
+    <script>
+
+        function pulaLinha () {
+
+            document.write("<br>");
+        }
+
+        function mostra (frase) {
+
+            document.write(frase);
+        }
+    </script>
+
+<h3> Questão 1</h3>
+
+    <script>
+        function escreva (palavra1,palavra2) {
+
+            document.write(palavra1,palavra2,"<br>");
+        }
+
+        escreva("Olá,"," Mundo!");
+        pulaLinha()
+
+        function escrevaSaudacao (saudacao,nome) {
+
+        document.write(saudacao,nome);
+        }
+
+        escrevaSaudacao("Olá, ","Erica.");
+        pulaLinha();
+        escrevaSaudacao("Tudo bem, ","Erica?");
+        pulaLinha ();
+</script>
+
+<h3>Questão 3</h3>
+
+    <script>    
+        function calculaResto (numero,divisor) {
+
+            var resto = numero % divisor
+            document.write("O resto de " + numero + " dividido por " + divisor + " é: " + resto);
+        }
+
+        pulaLinha ();
+        calculaResto(185,9);
+        pulaLinha ();
+    </script>    
+
+<h3>Questão 4</h3>
+        
+    <script>
+        function permiteMotorista (idadeMotorista,idadePermitida) {
+
+            if (idadeMotorista >= idadePermitida) {
+                return "Você pode dirigir"
+            } else {
+                return "Você não pode dirigir"
+            }
+        }
+
+        function testaPermissaoJapaoEMostra (teste_idade) {
+
+            document.write("<strong>No Japão: </strong>" + teste_idade + "<br>");
+        }
+
+        function testaPermissaoEuaEMostra (teste_idade) {
+
+            document.write("<strong>No EUA: </strong>" + teste_idade + "<br>");
+        }
+
+        var idadeErica = 29;
+        var idadeAfilhado = 4;
+        var idadeMaisa = 18;
+        var idadeVizinho = 16;
+
+        var idadePermitidaNoJapao = 18;
+        var idadePermitidaNoEUA = 16;
+
+        //Teste no Japao
+        pulaLinha ();
+        testaPermissaoJapaoEMostra (permiteMotorista(idadeErica,idadePermitidaNoJapao));
+        testaPermissaoJapaoEMostra (permiteMotorista(idadeAfilhado,idadePermitidaNoJapao));
+        testaPermissaoJapaoEMostra (permiteMotorista(idadeMaisa,idadePermitidaNoJapao));
+        testaPermissaoJapaoEMostra (permiteMotorista(idadeVizinho,idadePermitidaNoJapao));
+
+        //Teste no EUA
+        pulaLinha ();
+        testaPermissaoEuaEMostra (permiteMotorista(idadeErica,idadePermitidaNoEUA));
+        testaPermissaoEuaEMostra (permiteMotorista(idadeAfilhado,idadePermitidaNoEUA));
+        testaPermissaoEuaEMostra (permiteMotorista(idadeMaisa,idadePermitidaNoEUA));
+        testaPermissaoEuaEMostra (permiteMotorista(idadeVizinho,idadePermitidaNoEUA));
+    </script>
+
+<h3>Questão 5</h3>
+        
+    <script>
+        function permiteBeber (idadeUsuario,idadePermitida) {
+
+            if (idadeUsuario >= idadePermitida) {
+                return "Você pode beber"
+            } else {
+                return "Você não pode beber"
+            }
+        }
+
+        function testaPermissaoEuaEMostra (teste_idade) {
+
+            document.write("<strong>No EUA: </strong>" + teste_idade + "<br>");
+        }
+
+        function testaPermissaoGreciaEMostra (teste_idade) {
+
+            document.write("<strong>Na Grecia: </strong>" + teste_idade + "<br>");
+        }
+
+        var idadeErica = 29;
+        var idadeAfilhado = 4;
+        var idadeMaisa = 18;
+        var idadeVizinho = 16;
+
+        var idadePermitidaNoJapao = 21;
+        var idadePermitidaNoEUA = 18;
+
+        //Teste no EUA
+        pulaLinha ();
+        testaPermissaoEuaEMostra (permiteMotorista(idadeErica,idadePermitidaNoJapao));
+        testaPermissaoEuaEMostra (permiteMotorista(idadeAfilhado,idadePermitidaNoJapao));
+        testaPermissaoEuaEMostra (permiteMotorista(idadeMaisa,idadePermitidaNoJapao));
+        testaPermissaoEuaEMostra (permiteMotorista(idadeVizinho,idadePermitidaNoJapao));
+
+        //Teste na Grecia
+        pulaLinha ();
+        testaPermissaoGreciaEMostra (permiteMotorista(idadeErica,idadePermitidaNoEUA));
+        testaPermissaoGreciaEMostra (permiteMotorista(idadeAfilhado,idadePermitidaNoEUA));
+        testaPermissaoGreciaEMostra (permiteMotorista(idadeMaisa,idadePermitidaNoEUA));
+        testaPermissaoGreciaEMostra (permiteMotorista(idadeVizinho,idadePermitidaNoEUA));
+    </script>
+
+<h3>Questão 6</h3>
+
+    <script>
+        function ligaSemafaro (ativo) {
+
+            if (ativo == "verde") {
+                return "Pode passar."
+            } else if (ativo == "amarelo") {
+                return "Melhor freiar"
+            } else if (ativo == "vermelho")
+                return "Pare já"
+        }
+
+        mostra(ligaSemafaro("vermelho"));
+        pulaLinha();
+        mostra(ligaSemafaro("verde"));
+        pulaLinha();
+        mostra(ligaSemafaro("amarelo"));
+        pulaLinha();
+    </script>
+
+<h3>Questão 7</h3>
+
+    <script>
+        function mostraMenu (item_menu) {
+
+            document.write(item_menu + "<br>");
+        }
+
+        mostraMenu ("1 - Refrigerante");
+        mostraMenu ("2 - Suco");
+        mostraMenu ("3 - Água");
+    </script>
+
+<h3>Questão 8</h3>
+
+    <script>
+        function menuUsuario (item_menu) {
+
+                if (item_menu == 1) {
+                    return "Você selecionou Refrigerante"
+                } else if (item_menu == 2) {
+                    return "Você selecionou Suco"
+                } else if (item_menu == 3) {
+                    return "Você selecionou Água"
+                } else if (item_menu >= 3)
+                    return "Bebida não encontrada, atualize a página e tente novamente."
+        
+        }
+        
+            mostra(menuUsuario(prompt("Menu da Questão 8: Escolha sua bebida\n 1 - Refrigerante\n 2 - Suco \n 3 - Água")))
+                        
+    </script>
+
+<h3>Questão 9</h3>
+
+<script>
+    function mostraMenu (item_menu) {
+
+        document.write(item_menu + "<br>");
+    }
+
+    mostraMenu ("1 - Refrigerante");
+    mostraMenu ("2 - Suco");
+    mostraMenu ("3 - Água");
+    mostraMenu("4 - Cerveja");
+    mostraMenu("5 - Chá Gelado");
+
+    pulaLinha ()
+
+    function menuUsuario (item_menu) {
+
+        if (item_menu == 1) {
+            return "Você selecionou #1 - Refrigerante"
+        } else if (item_menu == 2) {
+            return "Você selecionou #2 - Suco"
+        } else if (item_menu == 3) {
+            return "Você selecionou #3 - Água"
+        } else if (item_menu == 4) {
+            return "Você selecionou #4 - Cerveja"
+        }else if (item_menu == 5) {
+            return "Você selecionou #5 - Chá Gelado"
+        } else if (item_menu >= 5)
+            return "Bebida não encontrada, atualize a página e tente novamente."
+
+        }
+
+        mostra(menuUsuario(prompt("Menu da Questão 9: Escolha sua bebida\n #1 - Refrigerante\n #2 - Suco \n #3 - Água \n #4 - Cerveja \n #5 - Chá Gelado")))
+
+
+</script>

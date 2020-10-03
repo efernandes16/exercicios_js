@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<title>Calculando inflação</title>
+
+<script>
+
+    function pulaLinha () {
+
+        document.write("<br>")
+    }
+    
+    
+    function inflacaoCada (produto,preco1,preco2) {
+
+        var inflacaoAtual = preco1 - preco2
+        document.write("A inflação atual do " + produto + " é (R$): " + Math.round ((inflacaoAtual)*100)/100)
+        pulaLinha ()
+    }
+
+    function inflacaoMedia (mediaPeriodo) {
+
+        var mediaPeriodo = inflacaoTotal / 3
+        
+    }
+
+    
+var inflacaoT = inflacaoCada ("Tomate",3.30,4.70)
+var inflacaoA = inflacaoCada ("Arroz",2.99,3.25)
+var inflacaoC = inflacaoCada("Cenoura",3.99,4.14)
+
+var inflacaoTotal = (inflacaoT + inflacaoA + inflacaoC)
+
+inflacaoMedia()
+
+
+
+</script>
